@@ -1,9 +1,9 @@
 <?php
-  $app->get('/user/login', $guest(),  function() use ($app) {
-    $app->render('/user/login.php');
-  })->name('user.login');
+  $app->get('/account/login', $guest(),  function() use ($app) {
+    $app->render('/account/login.php');
+  })->name('account.login');
 
-  $app->post('/user/login', $guest(), function() use ($app) {
+  $app->post('/account/login', $guest(), function() use ($app) {
     $request = $app->request;
 
     $username = $request->post('username');
@@ -45,16 +45,16 @@
           );
         }
 
-        $app->flash('global', 'You are now signed in.');
+        $app->flash('global', 'You have been signed in');
         $app->response->redirect($app->urlFor('home'));
       } else {
-        $app->flash('global', 'Could not log you in.');
+        $app->flash('global', 'We could not sign you in');
         $app->response->redirect($app->urlFor('user.login'));
       }
     }
 
-    $app->render('user/login.php', [
+    $app->render('account/login.php', [
       'errors' => $v->errors(),
       'request' => $request
     ]);
-  })->name('user.login.post');
+  })->name('account.login.post');

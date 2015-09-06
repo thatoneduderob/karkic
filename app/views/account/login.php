@@ -4,7 +4,7 @@
 
 {% block content %}
 <h4>Login</h4>
-<form action="{{ urlFor('user.login.post') }}" method="post" autocomplete="off">
+<form action="{{ urlFor('account.login.post') }}" method="post" autocomplete="off">
   <div class="row">
     <div class="input-field col s12">
       <input id="username" name="username" type="text">

@@ -16,7 +16,16 @@
       'recover_hash',
       'remember_identifier',
       'remember_token',
-      'email'
+      'email',
+      'age',
+      'karmaLevel',
+      'karmaPosition',
+      'twitter',
+      'instagram',
+      'vine',
+      'musically',
+      'snapchat',
+      'kik'
     ];
 
     public function getFullName() {
@@ -76,5 +85,10 @@
 
     public function getUsername($userId) {
       return $this->where('id', $userId)->first()->username;
+    }
+
+    public function getLastLogin($stamp) {
+      $date = new \DateTime($stamp);
+      return $date->format('F j, Y');
     }
   }

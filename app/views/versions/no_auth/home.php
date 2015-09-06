@@ -3,4 +3,4 @@
 <br>
 <p>To get started, you may register using the link below. If you already have an account, please click the login link.</p>
 <br>
-<a class="waves-effect waves-light btn" href="{{urlFor('user.register')}}">Register</a><a class="waves-effect waves-light btn" href="{{urlFor('user.login')}}">Login</a>
+<a class="waves-effect waves-light btn" href="{{urlFor('account.register')}}">Register</a><a class="waves-effect waves-light btn" href="{{urlFor('account.login')}}">Login</a>

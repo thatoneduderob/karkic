@@ -1,5 +1,5 @@
 {% if flash.global %}
-  <div class="global">
-    {{ flash.global }}
-  </div>
+<script>
+Materialize.toast("{{flash.global}}", 2000);
+</script>
 {% endif %}

@@ -11,7 +11,6 @@
   </head>
   <body>
     {% include 'templates/navigation/index.php' %}
-    {% include 'templates/messages/index.php' %}
     <div class="row">
       {% include 'templates/sidebar/index.php' %}
       <div class="col s9">
@@ -26,5 +25,7 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="/js/materialize.min.js"></script>
+    <script src="/js/custom.js"></script>
+    {% include 'templates/messages/index.php' %}
   </body>
 </html>

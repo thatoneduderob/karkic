@@ -5,9 +5,6 @@
   use Noodlehaus\Config;
   use RandomLib\Factory as RandomLib;
   use thatoneduderob\User\User;
-  use thatoneduderob\Models\Dropdown;
-  use thatoneduderob\Models\Option;
-  use thatoneduderob\Models\Message;
   use thatoneduderob\Helpers\Hash;
   use thatoneduderob\Validation\Validator;
   use thatoneduderob\Middleware\BeforeMiddleware;
@@ -38,15 +35,6 @@
   $app->auth = false;
   $app->container->set('user', function() {
     return new User;
-  });
-  $app->container->set('dropdown', function() {
-    return new Dropdown;
-  });
-  $app->container->set('option', function() {
-    return new Option;
-  });
-  $app->container->set('message', function() {
-    return new Message;
   });
   $app->container->singleton('hash', function() use ($app) {
     return new Hash($app->config);
