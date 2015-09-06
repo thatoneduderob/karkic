@@ -1,6 +1,6 @@
 {% extends 'templates/default.php' %}
 
-{% set title = 'Home' %}
+{% set title = 'About' %}
 
 {% block content %}
 <h4>About us</h4>

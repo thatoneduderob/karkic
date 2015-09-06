@@ -6,19 +6,17 @@
   class User extends Eloquent {
     protected $table = 'users';
     protected $fillable = [
-      'email',
       'username',
       'password',
+      'lastLogin',
       'active',
       'active_hash',
-      'remember_identifier',
-      'remember_token',
-      'recover_hash',
       'first_name',
       'last_name',
-      'location',
-      'school',
-      'prof_hash'
+      'recover_hash',
+      'remember_identifier',
+      'remember_token',
+      'email'
     ];
 
     public function getFullName() {
@@ -41,8 +39,8 @@
     }
 
     public function getAvatarUrl($options = []) {
-      if(file_exists("profs/".$this->prof_hash."/profile.jpg")) {
-        return "/karkic/profs/".$this->prof_hash."/profile.jpg";
+      if(file_exists("/profs/".$this->prof_hash."/profile.jpg")) {
+        return "/profs/".$this->prof_hash."/profile.jpg";
       } else {
         $size = isset($options['size']) ? $options['size']: 45;
         return 'http://www.gravatar.com/avatar/'
@@ -73,7 +71,7 @@
     }
 
     public function permissions() {
-      return $this->hasOne('HardcoreWars\User\UserPermission', 'user_id');
+      return $this->hasOne('thatoneduderob\User\UserPermission', 'user_id');
     }
 
     public function getUsername($userId) {
