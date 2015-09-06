@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, sans-serif;
+}
+nav {
+  background-color: #d50000;
+  padding-top: 10px;
+  text-align: center;
+}
+div > nav > span#logo {
+  font-size: 36px;
+  color: #ffffff;
+}
+div > nav > h4.name {
+  color: #ffffff;
+  font-size: 28px;
+}
+div > nav > h4.name > span.name-sub {
+  font-size: 18px;
+  display: block;
+}
+div {
+  text-align: center;
+}
+nav > ul.nav {
+  list-style: none;
+  display: table;
+  padding: 0;
+  margin: 0 auto;
+  margin-top: 10px;
+  text-align: center;
+}
+nav > ul.nav > li {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+nav > ul.nav > li > a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  background-color: #b71c1c;
+  padding: 10px 20px;
+}
+nav > ul.nav > li:hover > a {
+  background-color: #ffffff;
+  color: #b71c1c;
+}
+nav > ul > li > ul {
+  display: none;
+  position: absolute;
+}
+nav > ul > li:hover > ul {
+  display: block;
+  padding: 0;
+  width: 13em;
+}
+nav > ul > li > ul > li {
+  position: relative;
+  list-style: none;
+  z-index: 2;
+}
+nav > ul > li > ul > li > a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  background-color: #b71c1c;
+  padding: 5px 20px;
+  font-size: 12px;
+}
+nav > ul > li > ul > li:hover > a {
+  background-color: #ffffff;
+  color: #b71c1c;
+}
+div.row {
+  margin: 10px auto;
+  padding: 0;
+}
+div.row ul {
+  list-style-type: circle !important;
+}
+div.card {
+  background-color: #d50000;
+}
+div.card > div.card-content.white-text a {
+  color: #FFFF7A;
+}
+div.card > div.card-content.white-text a:hover {
+  text-decoration: underline;
+}
+span.card-title {
+  border-bottom: 2px solid #000000;
+}
+.btn, .btn-large {
+  background-color: #b71c1c !important;
+  color: #ffffff !important;
+  text-decoration: none !important;
+  margin: 2px 5px;
+}
+.btn:hover, .btn-large:hover {
+  background-color: #ffffff !important;
+  color: #b71c1c !important;
+}
+@media only screen and (max-width: 1024px) {
+    .col.s9 {
+      width: 100% !important;
+    }
+    .sb_wd .col.s3 {
+      width: 100% !important;
+    }
+}
