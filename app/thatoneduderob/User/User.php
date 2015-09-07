@@ -20,10 +20,6 @@
       'age',
       'karmaLevel',
       'karmaPosition',
-      'twitter',
-      'instagram',
-      'vine',
-      'musically',
       'snapchat',
       'kik'
     ];

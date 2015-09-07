@@ -9,7 +9,7 @@
     <div class="col s3">
       <img src="{{ user.getAvatarUrl({size: 120}) }}" alt="Profile picture for {{ user.getFullNameOrUsername }}">
       <p id="karma">
-        +/-
+        {{user.karmaPosition}} {{user.karmaLevel}}
         <br>karma
       </p>
     </div>
@@ -37,33 +37,13 @@
         </tr>
         <tr>
           <td>social</td>
-          <td>twitter</td>
-          <td>{{user.twitter}}</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>instagram</td>
-          <td>{{user.instagram}}</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>vine</td>
-          <td>{{user.vine}}</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>musical.ly</td>
-          <td>{{user.musically}}</td>
-        </tr>
-        <tr>
-          <td></td>
           <td>snapchat</td>
           <td>{{user.snapchat}}</td>
         </tr>
         <tr>
           <td></td>
           <td>kik</td>
-          <td></td>
+          <td>{{user.kik}}</td>
         </tr>
       </table>
     </div>

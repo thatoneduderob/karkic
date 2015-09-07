@@ -6,5 +6,6 @@
   require INC_ROOT.'/app/routes/account/logout.php';
   require INC_ROOT.'/app/routes/account/register.php';
   require INC_ROOT.'/app/routes/account/activate.php';
+  require INC_ROOT.'/app/routes/account/edit.php';
 
   require INC_ROOT.'/app/routes/user/profile.php';
